@@ -64,7 +64,7 @@ export default function ContactUsDesign({ id }) {
 
   const onSubmitHandler = (id) => {
     if (window.confirm("Are you sure you want to delete?")) {
-      fetch(`http://localhost:8080/api/contactus?id=${id}`, {
+      fetch(`http://localhost:5000/api/contactus?id=${id}`, {
         method: 'DELETE',
         headers: {
           "Content-Type": "application/json"
